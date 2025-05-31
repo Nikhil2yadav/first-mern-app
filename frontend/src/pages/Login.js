@@ -15,7 +15,7 @@ function Login() {
             return handleError("All fileds are require")
         }
         try {
-            const url ="http://localhost:8000/auth/login";
+            const url ="https://first-mern-api.onrender.com/auth/login";
             const response=await fetch(url,{
                 method:"POST",
                 headers:{
