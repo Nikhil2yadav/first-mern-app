@@ -13,7 +13,7 @@ const Insert_image = () => {
         const formData=new FormData();
         formData.append('image',image);
 
-        const response= await axios.post("http://localhost:8000/insertImage",formData,{
+        const response= await axios.post("https://first-mern-api.onrender.com/insertImage",formData,{
             headers:{
                 "Content-Type":"multipart/form-data",
                     'Authorization':localStorage.getItem('token')
@@ -30,7 +30,7 @@ const Insert_image = () => {
 
     const getImages = async()=>{
         try {
-            const response= await axios.get("http://localhost:8000/getImages",{
+            const response= await axios.get("https://first-mern-api.onrender.com/getImages",{
                 headers:{
                     'Authorization':localStorage.getItem('token')
 
