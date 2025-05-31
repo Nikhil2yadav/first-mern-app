@@ -24,7 +24,7 @@ app.use('/auth', AuthRouter);
 app.use('/products', ProductRouter);
 app.use('/insertImage', InsertImageRouter);
 app.use('/getImages',GetIamges);
-app.use('/Uploads',express.static(path.join(__dirname,'..','Uploads')));
+app.use('/Uploads',express.static(path.join(__dirname,'Uploads')));
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
