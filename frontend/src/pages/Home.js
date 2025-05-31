@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { handleError } from '../utiles';
 import { ToastContainer } from 'react-toastify';
 
@@ -40,6 +40,7 @@ function Home() {
   return (
     <div>
         <h1>{isloggedinuser}</h1>
+        <button><Link to={'/insert_image'}>Insert Image</Link></button>
         <button onClick={handleLogout}>Logout</button>
         <div>{
            products && products?.map((item,index)=>(
@@ -49,6 +50,7 @@ function Home() {
             ))
         } 
         </div>
+
         <ToastContainer/>
     </div>
   )

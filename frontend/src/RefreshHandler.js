@@ -18,7 +18,7 @@ const RefreshHandler = ({setIsAuthorization}) => {
     },[location,navigate,setIsAuthorization])
   return (
     <div>
-      null
+      {null}
     </div>
   )
 }
