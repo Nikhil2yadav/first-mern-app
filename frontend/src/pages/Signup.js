@@ -16,7 +16,7 @@ function Signup() {
             return handleError("All fileds are require")
         }
         try {
-            const url ="http://localhost:8000/auth/signup";
+            const url ="https://first-mern-api.onrender.com/auth/signup";
             const response=await fetch(url,{
                 method:"POST",
                 headers:{
